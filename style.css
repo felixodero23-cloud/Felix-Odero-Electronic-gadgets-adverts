@@ -241,6 +241,34 @@ header {
     margin-bottom: 1.5rem;
 }
 
+.logistics-info {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-bottom: 1.5rem;
+    display: grid;
+    gap: 0.6rem;
+    border-top: 1px solid var(--glass-border);
+    padding-top: 1rem;
+}
+
+.logistics-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.promo-badge {
+    background: linear-gradient(135deg, #ff4e50, #f9d423);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(255, 78, 80, 0.3);
+}
+
 .importance strong {
     color: var(--accent);
 }
