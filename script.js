@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // WhatsApp Ordering
     const buyBtns = document.querySelectorAll('.buy-btn');
-    const phoneNumber = '254745900143'; // Standard Kenyan format
+    const phoneNumber = '254797753845'; // Standard Kenyan format
 
     buyBtns.forEach(btn => {
         btn.addEventListener('click', () => {
