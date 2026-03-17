@@ -45,7 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
     buyBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const itemName = btn.getAttribute('data-item');
-            const message = `Hello Felix Ochieng, I am interested in purchasing the ${itemName} from your adverts. Could you provide more details?`;
+            const shop = btn.getAttribute('data-shop');
+            const delivery = btn.getAttribute('data-delivery');
+            const fee = btn.getAttribute('data-fee');
+            
+            const message = `Hello Felix Ochieng, I am interested in purchasing the ${itemName} from your adverts.
+            
+Shop: ${shop}
+Delivery: ${delivery}
+Parcel Fee: KSh ${fee}
+
+Could you provide more details on how to finalize the order?`;
+            
             const encodedMessage = encodeURIComponent(message);
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
             
